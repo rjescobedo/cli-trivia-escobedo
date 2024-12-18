@@ -1,4 +1,4 @@
-# CLI Baseball Trivia Quiz
+# ⚾ CLI Baseball Trivia Quiz ⚾
 
 A simple Command-Line Interface (CLI) trivia quiz about baseball. Test your knowledge with various questions and answers about the great game of baseball. This project was created using Node.js and is designed to run in your terminal.
 
@@ -14,4 +14,9 @@ A simple Command-Line Interface (CLI) trivia quiz about baseball. Test your know
 To play, run the following command in your terminal:
 
 ```bash
+git clone https://github.com/rjescobedo/cli-trivia-escobedo.git
+cd cli-trivia-escobedo
+npm install
+npm link
 trivia-cli
+
