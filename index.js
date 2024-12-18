@@ -11,8 +11,8 @@ const quizLength = questions.length;
 
 // Function to start the trivia game
 async function startGame() {
-  console.log(chalk.blue.bold("⚾ Welcome to the Baseball Trivia Game! ⚾"));
-  console.log(chalk.yellow("Answer the following questions correctly to earn points.\n"));
+  console.log(chalk.cyanBright.bold("⚾ Welcome to the Baseball Trivia Game! ⚾"));
+  console.log(chalk.yellowBright("Answer the following questions correctly to earn points.\n"));
 
   for (let i = 0; i < quizLength; i++) {
     const currentQuestion = questions[i];
@@ -29,10 +29,10 @@ async function startGame() {
 
     // Check the answer
     if (answer.userAnswer === currentQuestion.answer) {
-      console.log(chalk.green("Correct!\n"));
+      console.log(chalk.greenBright("Correct!\n"));
       correctAnswer++;
     } else {
-      console.log(chalk.red(`Incorrect! The correct answer is: ${currentQuestion.answer}\n`));
+      console.log(chalk.redBright(`Incorrect! The correct answer is: ${currentQuestion.answer}\n`));
     }
   }
 
@@ -44,7 +44,14 @@ async function startGame() {
   const averageTotal = average(correctAnswer, quizLength);
 
   // Show final score and average
-  console.log(chalk.blue.bold(`Game Over! You got ${correctAnswer}/${quizLength} correct with an average of ${averageTotal}%!`));
+  // If user received a 70 or above
+  if (averageTotal >= 70) {
+    console.log(chalk.greenBright.bold(`🏆 Game Over! You got ${correctAnswer}/${quizLength} correct with an average of ${averageTotal}%! 🏆`));
+  // Else if user received below a 70
+  } else {
+    console.log(chalk.redBright.bold(`🤦🏽‍♂️ Game Over. You got ${correctAnswer}/${quizLength} correct with an average of ${averageTotal}%. 🤦🏽‍♂️`));
+
+  }
 }
 
 // Start the game
