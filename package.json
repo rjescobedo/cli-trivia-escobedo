@@ -1,0 +1,32 @@
+{
+  "name": "cli-trivia-escobedo",
+  "version": "1.0.0",
+  "description": "A Simple CLI Baseball Trivia Quiz",
+  "main": "index.js",
+  "bin": {
+    "trivia-cli": "./index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjescobedo/cli-trivia-escobedo.git"
+  },
+  "keywords": ["CLI", "Trivia", "Baseball"],
+  "author": "Your Name",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjescobedo/cli-trivia-escobedo/issues"
+  },
+  "homepage": "https://github.com/rjescobedo/cli-trivia-escobedo#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "inquirer": "^12.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,28 @@
+[
+    {
+      "question": "What is the maximum number of strikes a batter can have before being called out?",
+      "choices": ["2", "3", "4", "5"],
+      "answer": "3"
+    },
+    {
+      "question": "What is the term for a home run that is git with all bases loaded?",
+      "choices": ["Solo Home Run", "Ground Rule Double", "Grand Slam", "Triple Play"],
+      "answer": "Grand Slam"
+    },
+    {
+        "question": "How many players are on the field for a team during defense?",
+        "choices": ["7", "9", "10", "8"],
+        "answer": "9"
+    },
+    {
+        "question": "What is it called when a pitcher throws three strikes in a row to a single batter?",
+        "choices": ["Full Count", "Strike Zone", "Strikeout", "Walk"],
+        "answer": "Strikeout"
+    }, 
+    {
+        "question": "What is the area where pitchers warm up called?",
+        "choices": ["Dugout", "Bullpen", "Outfield", "Infield"],
+        "answer": "Bullpen"
+
+    }
+  ]
